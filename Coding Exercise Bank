@@ -1,0 +1,30 @@
+package RepetitionAndSelection;
+import java.util.Scanner;
+public class ExerciseCheckPassword {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i;
+		int password=454545;
+		int passwordin;
+        Scanner sc=new Scanner(System.in);
+        
+        
+	 for( i=2 ; i>=0 ; i--) {
+	 
+        System.out.print("Enter your account password: ");
+        passwordin =sc.nextInt();
+        if(passwordin==password) {
+        System.out.println("Your password is correct.");
+        break;
+        }else
+        System.out.print("Your password is wrong! You have "+i+" chance. Please enter again: ");
+        System.out.println();
+        if(i==0) {
+        System.out.print("INVALID PASSWORD!");
+        
+      }
+    }
+  }
+}
+
